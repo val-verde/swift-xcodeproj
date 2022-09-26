@@ -4,6 +4,9 @@ import PackageDescription
 
 let package = Package(
     name: "XcodeProj",
+    platforms: [
+        .macOS("12")
+    ],
     products: [
         .library(name: "XcodeProj", type: .dynamic, targets: ["XcodeProj"]),
     ],
